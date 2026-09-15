@@ -1,0 +1,106 @@
+html,
+body{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.wrapper {
+    width: 1024px;
+    margin:auto;
+    padding: 20px 0px 20px 0px;
+}
+
+  /*
+  *menu
+  */
+
+nav {
+    background-color: #1B262C;
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content:space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*
+*bawah menu satu
+*/
+
+header {
+    background: url("../image\ eklesia.jpeg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.header-opacity {
+    background-color: #1B262C;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    opacity: absolute;
+    top: 0;
+    left: 0;
+}
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.header-jumbotron > h4 {
+    color: #EAE0CF;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+ .header-jumbotron > p {
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+}
+
+.button {
+background-color: #7288AE;
+padding: 5px 10px 5px 10px;
+border-radius: 5px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
+}
