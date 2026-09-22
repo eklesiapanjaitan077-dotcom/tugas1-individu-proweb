@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+
+    <h2 style="color: #12544F;">Kalkulator Aritmatika</h2>
+
+    <!-- Form Inputan -->
+    <p>
+        Input Bilangan 1: 
+        <input type="number" id="bil1">
+    </p>
+    
+    <p>
+        Input Bilangan 2: 
+        <input type="number" id="bil2">
+    </p>
+
+    <!-- Tombol Operasi -->
+    <p>
+        <button onclick="tambah()">+</button>
+        <button onclick="kurang()">-</button>
+        <button onclick="kali()">X</button>
+        <button onclick="bagi()">/</button>
+    </p>
+
+    <!-- Kolom Hasil -->
+    <p>
+        Output: 
+        <input type="text" id="output" readonly>
+    </p>
+
+    <!-- Script JavaScript -->
+    <script>
+        function tambah() {
+            let a = parseFloat(document.getElementById("bil1").value);
+            let b = parseFloat(document.getElementById("bil2").value);
+            let hasil = a + b;
+            document.getElementById("output").value = hasil;
+        }
+
+        function kurang() {
+            let a = parseFloat(document.getElementById("bil1").value);
+            let b = parseFloat(document.getElementById("bil2").value);
+            let hasil = a - b;
+            document.getElementById("output").value = hasil;
+        }
+
+        function kali() {
+            let a = parseFloat(document.getElementById("bil1").value);
+            let b = parseFloat(document.getElementById("bil2").value);
+            let hasil = a * b;
+            document.getElementById("output").value = hasil;
+        }
+
+        function bagi() {
+            let a = parseFloat(document.getElementById("bil1").value);
+            let b = parseFloat(document.getElementById("bil2").value);
+            let hasil = a / b;
+            document.getElementById("output").value = hasil;
+        }
+    </script>
+
+</body>
+</html>
